@@ -9,6 +9,8 @@ const Home = () => {
   const [error, setError] = useState<any>(null);
   const [isFormat, setFormat] = useState<any>(null);
 
+  const jsonData = JSON.stringify(responseData, null, 1);
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-800 text-white">
       <div className="bg-gray-900 p-8 rounded-lg shadow-md w-full max-w-fit">
@@ -47,7 +49,7 @@ const Home = () => {
           <div className="mt-4 max-h-96 overflow-y-auto">
             <h2>DHL Response Data:</h2>
             <div className="bg-gray-700 p-4 rounded">
-              <pre>{JSON.stringify(responseData, null, 1)}</pre>
+              <pre>{jsonData}</pre>
             </div>
           </div>
         )}
@@ -55,7 +57,7 @@ const Home = () => {
           <div className="mt-4 max-h-96 overflow-y-auto">
             <h2>SF Express Response Data:</h2>
             <div className="bg-gray-700 p-4 rounded">
-              <pre>{JSON.stringify(responseData, null, 1)}</pre>
+              <pre>{jsonData}</pre>
             </div>
           </div>
         )}
