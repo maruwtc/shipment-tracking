@@ -18,11 +18,11 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #2e2e2e;
+    background-color: #ffffff5b;
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #ffffff5b;
+    background-color: #2e2e2e;
     border-radius: 5px;
 }
